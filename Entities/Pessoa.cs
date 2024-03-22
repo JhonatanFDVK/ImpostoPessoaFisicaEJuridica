@@ -18,7 +18,7 @@
             }
             set
             {
-                if (value.Length > 3 && value != null
+                if (value.Length > 2 && value != null
                     && string.IsNullOrWhiteSpace(value) == false)
                 {
                     _nome = value;
