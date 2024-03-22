@@ -37,7 +37,7 @@ namespace ExercicioContribuintesPolimorfismo.Entities
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine(Nome + ": $ " + Imposto().ToString("F2", CultureInfo.InvariantCulture));
+            sb.Append(Nome + ": $ " + Imposto().ToString("F2", CultureInfo.InvariantCulture));
 
             return sb.ToString();
         }
