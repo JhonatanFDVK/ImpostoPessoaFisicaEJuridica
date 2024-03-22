@@ -1,9 +1,11 @@
-﻿namespace ExercicioContribuintesPolimorfismo.Entities
+﻿using System.Globalization;
+using System.Text;
+
+namespace ExercicioContribuintesPolimorfismo.Entities
 {
     internal class PessoaFisica : Pessoa
     {
         private double _gastosSaude;
-
 
         public PessoaFisica(string nome, double rendaAnual, double gastosSaude) : base(nome, rendaAnual)
         {
@@ -30,6 +32,13 @@
                 return (RendaAnual * 0.15) - (GastosSaude * 0.50);
             }
             return (RendaAnual * 0.25) - (GastosSaude * 0.50);
+        }
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(Nome + ": $ " + Imposto().ToString("F2", CultureInfo.InvariantCulture));
+
+            return sb.ToString();
         }
     }
 }

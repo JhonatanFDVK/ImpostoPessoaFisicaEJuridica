@@ -1,13 +1,11 @@
 ﻿using System.Globalization;
 using System.Text;
 
-
 namespace ExercicioContribuintesPolimorfismo.Entities
 {
     internal class PessoaJuridica : Pessoa
     {
         private int _numeroFuncionarios;
-
 
         public PessoaJuridica(string nome, double rendaAnual, int numeroFuncionarios)
             : base(nome, rendaAnual)
