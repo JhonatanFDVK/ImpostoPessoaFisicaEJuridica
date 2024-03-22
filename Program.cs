@@ -41,5 +41,21 @@ class Program
                 pessoas.Add(pessoa);
             }
         }
+
+        Console.WriteLine("\nTAXES PAID:");
+
+        foreach (Pessoa item in pessoas)
+        {
+            Console.WriteLine(item);
+        }
+
+        double totalImpostos = 0.0;
+
+        foreach (Pessoa item in pessoas)
+        {
+            totalImpostos += item.Imposto();
+        }
+
+        Console.WriteLine($"TOTAL TAXES: " + totalImpostos.ToString("F2", CultureInfo.InvariantCulture));
     }
 }
