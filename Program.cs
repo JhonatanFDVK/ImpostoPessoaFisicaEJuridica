@@ -56,6 +56,6 @@ class Program
             totalImpostos += item.Imposto();
         }
 
-        Console.WriteLine($"TOTAL TAXES: " + totalImpostos.ToString("F2", CultureInfo.InvariantCulture));
+        Console.WriteLine($"\nTOTAL TAXES: " + totalImpostos.ToString("F2", CultureInfo.InvariantCulture));
     }
 }
