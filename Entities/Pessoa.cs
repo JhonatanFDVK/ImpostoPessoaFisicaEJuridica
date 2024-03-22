@@ -5,7 +5,6 @@
         private string _nome;
         private double _rendaAnual;
 
-
         public Pessoa(string nome, double rendaAnual)
         {
             Nome = nome;
